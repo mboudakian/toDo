@@ -41,4 +41,4 @@ app.post("/work", function(req, res) {
   res.redirect("/work");
 });
 
-app.listen(3000);
+app.listen(process.env.port || 3000);
